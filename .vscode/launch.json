@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // ① 【デフォルト】現在開いているアクティブな TS ファイルを tsx で単体デバッグ実行
+            "name": "▶ TypeScript: Current File",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": ["tsx", "${file}"],
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": ["<node_internals>/**", "**/node_modules/**"]
+        },
+        {
+            // ② 統合エントリーポイント (main.ts) を実行して全モジュールを一括検証
+            "name": "▶ TypeScript: Run main.ts (All Modules)",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": ["tsx", "${workspaceFolder}/src/main.ts"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": ["<node_internals>/**", "**/node_modules/**"]
+        }
+    ]
+}

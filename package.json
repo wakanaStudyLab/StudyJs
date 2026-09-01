@@ -1,0 +1,19 @@
+{
+  "name": "js-ts-sample",
+  "version": "1.0.0",
+  "description": "Modern JavaScript & TypeScript Crash Course for Rust/C#/Go/Java/Python Developers",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "build": "tsc",
+    "run:01": "tsx src/01_types_and_generics.ts",
+    "run:02": "tsx src/02_control_and_immutability.ts",
+    "run:03": "tsx src/03_async_and_eventloop.ts",
+    "run:04": "tsx src/04_classes_and_modules.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

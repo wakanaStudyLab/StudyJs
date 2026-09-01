@@ -1,0 +1,16 @@
+{
+    // プロジェクト内の最新 TypeScript を使用
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+
+    // 自動インポート補完
+    "typescript.suggest.autoImports": true,
+    "javascript.suggest.autoImports": true,
+
+    // ファイルエンコーディング (UTF-8)
+    "files.encoding": "utf8",
+
+    // 保存時の不要な空白削除と末尾改行
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}
